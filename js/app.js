@@ -1,4 +1,4 @@
-let resultado=0;
+/* let resultado=0;
 
 console.log(suma());
 
@@ -32,4 +32,25 @@ participantes.forEach(part=>contenedor.innerHTML+=
 </div>`
     );
 }
-render()
+render() */
+
+let texto = "me gusta el helado de dulce de leche un montonzao";
+let nombre3 = "Santiago Debole";
+// let saludo = "Hola! Soy: " +nombre2+ " y "+texto;
+let saludo = `<h3>Hola soy: ${nombre3} y ${texto}</h3>` ;
+let contenedor = document.getElementById("root");
+contenedor.innerHTML+=saludo;
+
+
+function nombreCompleto(nombre=" ", apellido=" "){
+return `${nombre} ${apellido}`;
+}
+console.log(nombreCompleto("Santiago", "Debole"));
+console.log(nombreCompleto("Santiago"));
+
+
+/*const nombre_funcion=(nombre,apellido)=>{
+return ` con arrow function ${nombre} ${apellido}`;
+};
+
+console.log(nombre_funcion("Santiago","Debole")); */
